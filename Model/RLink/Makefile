@@ -4,7 +4,7 @@
 # the R installation is known.
 
 # On windows, the first (RLink.dll) is built by msvc, the other (REmbed.dll) by gcc.
- 
+
 include $(APSIM)/Model/Build/Platform.make
 
 PROJECT = RLink
@@ -28,10 +28,10 @@ RDataTypes_1.$(OBJEXT): RDataTypes_1.cpp RDataTypes.h
 RDataTypes_2.$(OBJEXT): RDataTypes_2.cpp RDataTypes.h
 
 RComponent.h RDataTypes_1.cpp RDataTypes_2.cpp  RDataTypes.h REmbed.cpp REmbed.h RLink.def: ../DataTypes/Datatypes.xml RDataTypes.macro
-	$(APSIM)/Model/ProcessDataTypesInterface.exe ../DataTypes/Datatypes.xml RDataTypes.macro
+	mono $(APSIM)/Model/ProcessDataTypesInterface.exe ../DataTypes/Datatypes.xml RDataTypes.macro
 
 libRLink.a: RLink.def
 	dlltool -d RLink.def -l libRLink.a
 
 clean:
-	rm -f RComponent.h RDataTypes*.* RDataTypesEmbedded.cpp RDataTypesEmbedded.h RLink.def ../REmbed.so ../RSimulation.so *.o 
+	rm -f RComponent.h RDataTypes*.* RDataTypesEmbedded.cpp RDataTypesEmbedded.h RLink.def ../REmbed.so ../RSimulation.so *.o
