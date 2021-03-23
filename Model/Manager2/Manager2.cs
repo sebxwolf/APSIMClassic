@@ -113,7 +113,7 @@ public class Manager2
                 Params.ReferencedAssemblies.Add("System.dll");
                 Params.ReferencedAssemblies.Add("System.Xml.dll");
                 Params.ReferencedAssemblies.Add("System.Core.dll");
-                Params.ReferencedAssemblies.Add(Path.Combine(Configuration.ApsimBinDirectory(), "System.Data.SQLite.dll");
+                Params.ReferencedAssemblies.Add(Path.Combine(Configuration.ApsimBinDirectory(), "System.Data.SQLite.dll"));
                 Params.ReferencedAssemblies.Add(Path.Combine(Configuration.ApsimBinDirectory(), "CSDotNetComponentInterface.dll"));
                 Params.ReferencedAssemblies.Add(Path.Combine(Configuration.ApsimBinDirectory(), "DotNetProxies.dll"));
                 Params.ReferencedAssemblies.Add(Path.Combine(Configuration.ApsimBinDirectory(), "CMPServices.dll"));
