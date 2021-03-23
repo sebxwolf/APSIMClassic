@@ -757,10 +757,10 @@
          <WorkingDirectory>%APSIM%/Model/Agroforestry</WorkingDirectory>
          <CommandLine>make</CommandLine>
       </Job>
-      <Job name="Compile DCaPST">
+      <!-- <Job name="Compile DCaPST">
          <WorkingDirectory>%APSIM%/Model/DCaPST</WorkingDirectory>
          <CommandLine>make</CommandLine>
-      </Job>
+      </Job> -->
       <Job name="Compile CreatePatch">
          <DependsOn>Compile CSGeneral</DependsOn>
          <WorkingDirectory>%APSIM%/Model/JobScheduler/CreatePatch</WorkingDirectory>
